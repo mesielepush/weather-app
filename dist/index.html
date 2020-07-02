@@ -11,16 +11,44 @@
     <div class="container">
         <div class="container main d-flex flex-column justify-content-center align-items-center">
             <div class="dates d-flex text-center justify-content-around align-items-center">
-                <span id='today'>Thursday, July 2nd 2020</span>
-                <span id='now'>1:23 PM</span>
+                <span id='today'></span>
+                <span id='now'></span>
             </div>
-            <div class="city_country">
-                <span id='city'>Oaxaca</span>
-                <span id='country'>MX</span>
+            <div class='select d-flex justify-content-center align-items-center'>
+                <span>C</span>
+                <label class="switch">
+                  <input id='selector' type="checkbox">
+                  <span class="slider round"></span>
+                </label>
+                <span>F</span>
+            </div>
+            <div class="city_country d-flex justify-content-around align-items-center">
+                <span id='city'></span>
+                <span id='country'></span>
             </div>
             
-            <div class="temps">popo</div>
-            <div class="others">popo</div>
+            <div class="temps d-flex justify-content-around align-items-center">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <div class="others d-flex justify-content-around align-items-center">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+            <div class="input_city">
+                <div class="form-group">
+                    <label for="recipient-name" class="col-form-label">Step Name:</label>
+                    <input type="text" id='cityInput' placeholder='ENTER CITY'>
+                </div>
+                
+
+            </div>
         </div>
         
     </div>

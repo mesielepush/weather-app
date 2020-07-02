@@ -30,12 +30,15 @@ body{
     width: 45rem;
     height: 45rem;
     border-radius: 25px;
-    background-color: rgb(151, 91, 230);
+    background-color: rgb(151, 176, 229);
     -webkit-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
     box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
     div{
-        color:white
+        color:white;
+        -webkit-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
     }
     span{
         color:white
@@ -43,36 +46,100 @@ body{
     .dates{
         position: relative;
         border-radius: 20px;
-        -webkit-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
-        -moz-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
-        box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
-        top:-5rem;
-        width: 35rem;
+        padding:2rem;
+        top:-10rem;
+        width: auto;
         height: 4rem;
-        background-color: red;
+        background-color: rgba(74, 207, 240, 0.75);
         font-family: 'Press Start 2P', cursive;
     
     }
+    
     .city_country{
         position: relative;
-        top:-2rem;
-        width: 10rem;
-        height: 8rem;
-        background-color: rgb(76, 156, 55);
+        top:-9rem;
+        width: auto;
+        padding: 2rem;
+        height: 2rem;
+        
+        font-family: 'Press Start 2P', cursive;
+        border-radius: 25px;
+
     }
+    .switch {
+        position: relative;
+        display: inline-block;
+        width: 60px;
+        height: 34px;
+        margin: 5px;
+      }
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 26px;
+        width: 26px;
+        left: 4px;
+        bottom: 4px;
+        background-color: white;
+        -webkit-transition: .4s;
+        transition: .4s;
+      }
+      
+      input:checked+.slider {
+        background-color: #2196F3;
+      }
+      
+      input:focus+.slider {
+        box-shadow: 0 0 1px #2196F3;
+      }
+      
+      input:checked+.slider:before {
+        -webkit-transform: translateX(26px);
+        -ms-transform: translateX(26px);
+        transform: translateX(26px);
+      }
+      
+      
+      .slider.round {
+        border-radius: 34px;
+      }
+      
+      .slider.round:before {
+        border-radius: 50%;
+      }
     .temps{
         position: relative;
-        left:0;
+        bottom:-7rem;
         width: 35rem;
         height: 10rem;
+        border-radius: 25px;
 
         background-color: green;
     }
     .others{
         position: relative;
         left:0;
+        bottom:-9rem;
         width: 35rem;
-        height: 10rem;
+        height: 5rem;
+        border-radius: 25px;
         background-color: rgb(207, 189, 22);
+    }
+    .input_city{
+        position: relative;
+        top:-8rem;
+        
     }
 }
