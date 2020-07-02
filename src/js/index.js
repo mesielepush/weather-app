@@ -1,4 +1,5 @@
 import '../styles/style.scss';
-import weatherCelcius from './weatherApi'
+import Central from './weatherApi'
 
-weatherCelcius('mexico city')
+Central().celsius('mexico city')
+Central().imperial('mexico city')
