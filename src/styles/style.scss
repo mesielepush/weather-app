@@ -1,8 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+$rain-color-1: #D8E0BB;
+$rain-color-2: #B6CEC7;
+$rain-color-3: #86A3C3;
+$rain-color-4: #7268A6;
+$rain-color-5: #6B3074;
+
+$sunny-color-1: #5B1647;
+$sunny-color-2: #900C3F;
+$sunny-color-3: #C70039;
+$sunny-color-4: #FF5733;
+$sunny-color-5: #FFC300;
+
+$cloudy-color-1: #e7dfd5;
+$cloudy-color-2: #84a9ac;
+$cloudy-color-3: #3b6978;
+$cloudy-color-4: #204051;
+$cloudy-color-5: #383e56;
+
+
+
+body{
+    background-color: black;
+
+}
 .main{
+    position: relative;
     margin-top: 5rem;
     width: 45rem;
     height: 45rem;
     border-radius: 25px;
-    background-color: black;
-    ;
+    background-color: rgb(151, 91, 230);
+    -webkit-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
+    box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
+    div{
+        color:white
+    }
+    span{
+        color:white
+    }
+    .dates{
+        position: relative;
+        border-radius: 20px;
+        -webkit-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
+        -moz-box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
+        box-shadow: inset 0px 2px 35px 11px rgba(0,0,0,0.75);
+        top:-5rem;
+        width: 35rem;
+        height: 4rem;
+        background-color: red;
+        font-family: 'Press Start 2P', cursive;
+    
+    }
+    .city_country{
+        position: relative;
+        top:-2rem;
+        width: 10rem;
+        height: 8rem;
+        background-color: rgb(76, 156, 55);
+    }
+    .temps{
+        position: relative;
+        left:0;
+        width: 35rem;
+        height: 10rem;
+
+        background-color: green;
+    }
+    .others{
+        position: relative;
+        left:0;
+        width: 35rem;
+        height: 10rem;
+        background-color: rgb(207, 189, 22);
+    }
 }
