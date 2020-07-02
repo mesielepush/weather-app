@@ -1,6 +1,8 @@
-.test {
+.main {
+  margin-top: 5rem;
   width: 45rem;
   height: 45rem;
-  background-color: red;
+  border-radius: 25px;
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
