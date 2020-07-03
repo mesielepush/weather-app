@@ -2,13 +2,12 @@ import '../styles/style.scss';
 import Central from './central'
 import dataHandler from './dataHandler'
 
-city.addEventListener('keydown',function() {
-    if(event.keyCode == 13) {
-        Central().celsius(city.value);
-    }
-})
-  
-  
-  
+const data = Central();
+const dom = dataHandler(data);
+data.celsius('oaxaca').then((response) => {
+  ;
+});
+
+
 
 

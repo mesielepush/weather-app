@@ -3,20 +3,44 @@ import renderImperial from './renderImperial'
 
 const dataHandler = (data)=>{
     const city       = document.getElementById('city');
-    const noCity     = document.getElementById('no_city');
-    const selector   = document.getElementById('selector'); 
-    const weather    = document.getElementById('weather');
-    const pressure   = document.getElementById('pressure');
-    const wind       = document.getElementById('wind');
-    const clouds     = document.getElementById('clouds');
-    const humidity   = document.getElementById('humidity');
-    const temp       = document.getElementById('temp');
-    const temp_max   = document.getElementById('temp_max');
-    const temp_min   = document.getElementById('temp_min');
-    const temp_feels = document.getElementById('temp_feels');
-    const country    = document.getElementById('country');
-
+    const selector   = document.getElementById('selector');
     
+
+    selector.addEventListener('change', (event) => {
+        const value = document.getElementById('cities').innerText;
+        if (!event.target.checked) {
+            const toRender = data.celsius(value)
+                    renderCelsius(toRender)
+        }else{
+            const toRender = data.imperial(value)
+                renderCelsius(toRender)
+
+        }
+          });
+        
+
+
+
+    city.addEventListener('keydown',function() {
+        if(event.keyCode == 13) {
+            const {value} = city;
+            city.value = ''
+            if (!selector.checked) {
+                    const toRender = data.celsius(value)
+                    renderCelsius(toRender)
+                    
+            } else{
+                const toRender = data.imperial(value)
+                renderCelsius(toRender)
+                    
+            }
+
+        }
+    })
+  
+  
+  
+
     
 
 }

@@ -105,7 +105,6 @@ body {
   position: relative;
   bottom: -7rem;
   width: 35rem;
-  display: none !important;
   height: 10rem;
   border-radius: 25px;
   background-color: green;
@@ -113,7 +112,6 @@ body {
 
 .main .others {
   position: relative;
-  display: none !important;
   left: 0;
   bottom: -9rem;
   width: 35rem;
@@ -127,7 +125,7 @@ body {
   top: -8rem;
 }
 
-.main .no_city {
+.main #no_city {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */
