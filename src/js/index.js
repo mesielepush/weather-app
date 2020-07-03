@@ -2,5 +2,13 @@ import '../styles/style.scss';
 import Central from './central'
 import dataHandler from './dataHandler'
 
-const data = Central();
-const render = dataHandler(data)
+city.addEventListener('keydown',function() {
+    if(event.keyCode == 13) {
+        Central().celsius(city.value);
+    }
+})
+  
+  
+  
+
+

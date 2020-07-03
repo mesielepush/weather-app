@@ -31,6 +31,7 @@ body {
   top: -10rem;
   width: auto;
   height: 4rem;
+  display: none;
   background-color: rgba(74, 207, 240, 0.75);
   font-family: 'Press Start 2P', cursive;
 }
@@ -41,6 +42,7 @@ body {
   width: auto;
   padding: 2rem;
   height: 2rem;
+  display: none;
   font-family: 'Press Start 2P', cursive;
   border-radius: 25px;
 }
@@ -103,6 +105,7 @@ body {
   position: relative;
   bottom: -7rem;
   width: 35rem;
+  display: none !important;
   height: 10rem;
   border-radius: 25px;
   background-color: green;
@@ -110,6 +113,7 @@ body {
 
 .main .others {
   position: relative;
+  display: none !important;
   left: 0;
   bottom: -9rem;
   width: 35rem;
@@ -121,5 +125,9 @@ body {
 .main .input_city {
   position: relative;
   top: -8rem;
+}
+
+.main .no_city {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

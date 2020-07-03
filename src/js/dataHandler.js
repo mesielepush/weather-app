@@ -2,6 +2,8 @@ import renderCelsius from './renderCelsius'
 import renderImperial from './renderImperial'
 
 const dataHandler = (data)=>{
+    const city       = document.getElementById('city');
+    const noCity     = document.getElementById('no_city');
     const selector   = document.getElementById('selector'); 
     const weather    = document.getElementById('weather');
     const pressure   = document.getElementById('pressure');
@@ -14,5 +16,9 @@ const dataHandler = (data)=>{
     const temp_feels = document.getElementById('temp_feels');
     const country    = document.getElementById('country');
 
+    
+    
 
 }
+
+export default dataHandler
