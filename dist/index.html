@@ -9,18 +9,20 @@
 </head>
 <body>
     <div class="container">
-        <div class="container main d-flex flex-column justify-content-center align-items-center">
+        <div class="container main d-flex flex-column justify-content-center align-items-center" id='main'>
             <div class="dates d-flex text-center justify-content-around align-items-center">
                 
                 <span id='now'>July / 08 / 2020</span>
             </div>
             <div class='select d-flex justify-content-center align-items-center'>
-                <span>C</span>
+                
                 <label class="switch">
+                    <span id='centigrades'>Cº</span>
                   <input id='selector' type="checkbox">
                   <span class="slider round"></span>
+                  <span id='farenh'>Fº</span>
                 </label>
-                <span>F</span>
+                
             </div>
             <div class="city_country d-flex justify-content-around align-items-center">
                 <span id='cities'>Oaxaca</span>
@@ -28,24 +30,60 @@
             </div>
             
             <div class="temps d-flex justify-content-around align-items-center">
-                <span id ='temp'>28</span>
-                <span id ='temp_max'>32</span>
-                <span id ='temp_min'>26</span>
-                <span id ='temp_feels'>30</span>
+                <div class="temp  d-flex flex-column text-center justify-content-center align-items-center">
+                    <span id='temperature'>Temperature</span>
+                    <span id ='temp'>28.53º</span>
+                </div>
+                <div class="miscelanious d-flex ">
+                    <div class="temp_max d-flex flex-column text-center justify-content-center align-items-center">
+                        <span>Max</span>
+    
+                        <span id ='temp_max'>21.53º</span>
+                    </div>
+                    <div class="temp_min d-flex flex-column text-center justify-content-center align-items-center">
+                        <span>Min</span>
+                    <span id ='temp_min'>26.56º</span>
+                        
+                    </div>
+                    <div class="temp_feels d-flex flex-column text-center justify-content-center align-items-center">
+                        <span>fells like:</span>
+                        <span id ='temp_feels'>22.13º</span>
+    
+                    </div>
+                </div>
+                
 
             </div>
             <div class="others d-flex justify-content-around align-items-center">
-                <span id='weather'>Clouds</span>
-                <span id='pressure'>1010</span>
+                <div class="weather_general d-flex flex-column text-center justify-content-center align-items-center">
+                    <span>
+                        Weather:
+                    </span>
+                    <span id='weather'>Clouds</span>
+                </div>
+                <div class="pressure d-flex flex-column text-center justify-content-center align-items-center">
+                    <span>Pressure</span>
+                    <span id='pressure'>1010</span>
+                </div>
+               <div class="wind d-flex flex-column text-center justify-content-center align-items-center" >
+                   <span>Wind</span>
                 <span id='wind'>1542</span>
-                <span id='clouds'>40%</span>
-                <span id='humidity'>65</span>
+               </div>
+                <div class="clouds d-flex flex-column text-center justify-content-center align-items-center">
+                    <span>Clouds</span>
+                    <span id='clouds'>40%</span>
+                </div>
+                <div class="humidity d-flex flex-column text-center justify-content-center align-items-center">
+                    <span>Humidity</span>
+                    <span id='humidity'>65</span>
+                </div>
+                
 
 
             </div>
-            <div class="input_city">
-                <div class="form-group">
-                    <input type="text" id='city' placeholder='WRite CITY'>
+            <div class="input_city d-flex justify-content-around align-items-center">
+                <div class="form-group text-center">
+                    <input type="text" id='city' placeholder='City...'>
                 </div>
             </div>
             

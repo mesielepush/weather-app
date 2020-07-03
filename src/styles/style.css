@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 body {
   background-color: black;
 }
@@ -10,14 +11,14 @@ body {
   height: 45rem;
   border-radius: 25px;
   background-color: #97b0e5;
-  -webkit-box-shadow: inset 0px 2px 35px 11px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 2px 35px 11px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0 2px 35px 11px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 2px 35px 11px rgba(0, 0, 0, 0.75);
 }
 
 .main div {
   color: white;
-  -webkit-box-shadow: inset 0px 2px 35px 11px rgba(0, 0, 0, 0.75);
-  box-shadow: inset 0px 2px 35px 11px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: inset 0 2px 35px 11px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 2px 35px 11px rgba(0, 0, 0, 0.75);
 }
 
 .main span {
@@ -64,11 +65,11 @@ body {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.main .slider:before {
+.main .slider::before {
   position: absolute;
   content: "";
   height: 26px;
@@ -76,20 +77,20 @@ body {
   left: 4px;
   bottom: 4px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .main input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 .main input:focus + .slider {
-  -webkit-box-shadow: 0 0 1px #2196F3;
-          box-shadow: 0 0 1px #2196F3;
+  -webkit-box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #2196f3;
 }
 
-.main input:checked + .slider:before {
+.main input:checked + .slider::before {
   -webkit-transform: translateX(26px);
   transform: translateX(26px);
 }
@@ -98,7 +99,7 @@ body {
   border-radius: 34px;
 }
 
-.main .slider.round:before {
+.main .slider.round::before {
   border-radius: 50%;
 }
 
@@ -129,4 +130,3 @@ body {
 .main #no_city {
   display: none;
 }
-/*# sourceMappingURL=style.css.map */
