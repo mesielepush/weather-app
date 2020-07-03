@@ -24,7 +24,7 @@ const renderCelsius = (data)=>{
         temp_feels.innerText =data.feels
         weather.innerText = data.weather.weather
         pressure.innerText = data.weather.pressure
-        wind.innerText = data.weather.wind.spped
+        wind.innerText = data.weather.wind.speed
         clouds.innerText = data.weather.clouds
         humidity.innerText = data.weather.humidity
         city.innerText = data.city

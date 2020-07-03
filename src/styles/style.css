@@ -28,11 +28,12 @@ body {
   position: relative;
   border-radius: 20px;
   padding: 2rem;
-  top: -10rem;
+  left: -10rem;
+  top: -7rem;
   width: auto;
   height: 4rem;
   display: none;
-  background-color: rgba(74, 207, 240, 0.75);
+  background-color: rgba(74, 207, 240, 0.2);
   font-family: 'Press Start 2P', cursive;
 }
 

@@ -1,5 +1,4 @@
-import renderCelsius from './renderCelsius'
-import renderImperial from './renderImperial'
+import render from './render'
 
 const dataHandler = (data)=>{
     const city       = document.getElementById('city');
@@ -10,10 +9,10 @@ const dataHandler = (data)=>{
         const value = document.getElementById('cities').innerText;
         if (!event.target.checked) {
             const toRender = data.celsius(value)
-                    renderCelsius(toRender)
+                    render(toRender)
         }else{
             const toRender = data.imperial(value)
-                renderCelsius(toRender)
+                render(toRender)
 
         }
           });
@@ -27,11 +26,11 @@ const dataHandler = (data)=>{
             city.value = ''
             if (!selector.checked) {
                     const toRender = data.celsius(value)
-                    renderCelsius(toRender)
+                    render(toRender)
                     
             } else{
                 const toRender = data.imperial(value)
-                renderCelsius(toRender)
+                render(toRender)
                     
             }
 
