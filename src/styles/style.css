@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+body {
+  background-color: black;
+}
+
+.main {
+  position: relative;
+  margin-top: 5rem;
+  width: 45rem;
+  height: 45rem;
+  border-radius: 25px;
+  background-color: #97b0e5;
+  -webkit-box-shadow: inset 0 2px 35px 11px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 2px 35px 11px rgba(0, 0, 0, 0.75);
+}
+
+.main div {
+  color: white;
+  -webkit-box-shadow: inset 0 2px 35px 11px rgba(0, 0, 0, 0.75);
+  box-shadow: inset 0 2px 35px 11px rgba(0, 0, 0, 0.75);
+}
+
+.main span {
+  color: white;
+}
+
+.main .dates {
+  position: relative;
+  border-radius: 20px;
+  padding: 2rem;
+  left: -10rem;
+  top: -7rem;
+  width: auto;
+  height: 4rem;
+  display: none;
+  background-color: rgba(74, 207, 240, 0.2);
+  font-family: 'Press Start 2P', cursive;
+}
+
+.main .city_country {
+  position: relative;
+  top: -9rem;
+  width: auto;
+  padding: 2rem;
+  height: 2rem;
+  display: none;
+  font-family: 'Press Start 2P', cursive;
+  border-radius: 25px;
+}
+
+.main .switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+  margin: 5px;
+}
+
+.main .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.main .slider::before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.main input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.main input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196f3;
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.main input:checked + .slider::before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+.main .slider.round {
+  border-radius: 34px;
+}
+
+.main .slider.round::before {
+  border-radius: 50%;
+}
+
+.main .temps {
+  position: relative;
+  bottom: -7rem;
+  width: 35rem;
+  height: 10rem;
+  border-radius: 25px;
+  background-color: green;
+}
+
+.main .others {
+  position: relative;
+  left: 0;
+  bottom: -9rem;
+  width: 35rem;
+  height: 5rem;
+  border-radius: 25px;
+  background-color: #cfbd16;
+}
+
+.main .input_city {
+  position: relative;
+  top: -8rem;
+}
+
+.main #no_city {
+  display: none;
+}
